@@ -14,7 +14,13 @@ You just need to copy 2 classes from above demo project
 
 **2) AVPageContentViewController**
 
--- After copying this class you need to add NSObject into your storyboard, and apply custom class to AVPageViewController for that NSObject
+**Feeling lazy to copy**
+You can always do pod install, add following line into your podfile
+```
+pod 'AVLighterPageViewController'
+```
+
+-- After this you need to add NSObject into your storyboard, and apply custom class to AVPageViewController for that NSObject
 
 -- Now create custom xib or viewcontroller in storyboard and subclass that class with AVPageContentViewController, in XIB or storyboard you need to apply custom class to AVPageContentViewController
 
