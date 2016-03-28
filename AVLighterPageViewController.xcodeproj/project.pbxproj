@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B1075E931CA94D8F00521CC2 /* AVPageContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1075E911CA94D8F00521CC2 /* AVPageContentViewController.swift */; };
+		B1075E941CA94D8F00521CC2 /* AVPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1075E921CA94D8F00521CC2 /* AVPageViewController.swift */; };
 		B1F69E331C46456F00C7C5FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F69E321C46456F00C7C5FB /* AppDelegate.swift */; };
 		B1F69E351C46456F00C7C5FB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F69E341C46456F00C7C5FB /* ViewController.swift */; };
 		B1F69E381C46456F00C7C5FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1F69E361C46456F00C7C5FB /* Main.storyboard */; };
@@ -14,8 +16,6 @@
 		B1F69E3D1C46456F00C7C5FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1F69E3B1C46456F00C7C5FB /* LaunchScreen.storyboard */; };
 		B1F69E481C46456F00C7C5FB /* AVLighterPageViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F69E471C46456F00C7C5FB /* AVLighterPageViewControllerTests.swift */; };
 		B1F69E531C46456F00C7C5FB /* AVLighterPageViewControllerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F69E521C46456F00C7C5FB /* AVLighterPageViewControllerUITests.swift */; };
-		B1F69E621C4645C900C7C5FB /* AVPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F69E611C4645C900C7C5FB /* AVPageViewController.swift */; };
-		B1F69E641C4645FD00C7C5FB /* AVPageContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F69E631C4645FD00C7C5FB /* AVPageContentViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B1075E911CA94D8F00521CC2 /* AVPageContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AVPageContentViewController.swift; sourceTree = "<group>"; };
+		B1075E921CA94D8F00521CC2 /* AVPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AVPageViewController.swift; sourceTree = "<group>"; };
 		B1F69E2F1C46456F00C7C5FB /* AVLighterPageViewController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AVLighterPageViewController.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1F69E321C46456F00C7C5FB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B1F69E341C46456F00C7C5FB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,8 +51,6 @@
 		B1F69E4E1C46456F00C7C5FB /* AVLighterPageViewControllerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AVLighterPageViewControllerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1F69E521C46456F00C7C5FB /* AVLighterPageViewControllerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVLighterPageViewControllerUITests.swift; sourceTree = "<group>"; };
 		B1F69E541C46456F00C7C5FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B1F69E611C4645C900C7C5FB /* AVPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AVPageViewController.swift; sourceTree = "<group>"; };
-		B1F69E631C4645FD00C7C5FB /* AVPageContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AVPageContentViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,9 +78,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B1075E901CA94D8F00521CC2 /* AVLighterPageComponent */ = {
+			isa = PBXGroup;
+			children = (
+				B1075E911CA94D8F00521CC2 /* AVPageContentViewController.swift */,
+				B1075E921CA94D8F00521CC2 /* AVPageViewController.swift */,
+			);
+			path = AVLighterPageComponent;
+			sourceTree = "<group>";
+		};
 		B1F69E261C46456F00C7C5FB = {
 			isa = PBXGroup;
 			children = (
+				B1075E901CA94D8F00521CC2 /* AVLighterPageComponent */,
 				B1F69E311C46456F00C7C5FB /* AVLighterPageViewController */,
 				B1F69E461C46456F00C7C5FB /* AVLighterPageViewControllerTests */,
 				B1F69E511C46456F00C7C5FB /* AVLighterPageViewControllerUITests */,
@@ -101,7 +111,6 @@
 		B1F69E311C46456F00C7C5FB /* AVLighterPageViewController */ = {
 			isa = PBXGroup;
 			children = (
-				B1F69E601C4645B400C7C5FB /* AVLighterPageComponent */,
 				B1F69E321C46456F00C7C5FB /* AppDelegate.swift */,
 				B1F69E341C46456F00C7C5FB /* ViewController.swift */,
 				B1F69E361C46456F00C7C5FB /* Main.storyboard */,
@@ -128,15 +137,6 @@
 				B1F69E541C46456F00C7C5FB /* Info.plist */,
 			);
 			path = AVLighterPageViewControllerUITests;
-			sourceTree = "<group>";
-		};
-		B1F69E601C4645B400C7C5FB /* AVLighterPageComponent */ = {
-			isa = PBXGroup;
-			children = (
-				B1F69E611C4645C900C7C5FB /* AVPageViewController.swift */,
-				B1F69E631C4645FD00C7C5FB /* AVPageContentViewController.swift */,
-			);
-			path = AVLighterPageComponent;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,10 +270,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1075E941CA94D8F00521CC2 /* AVPageViewController.swift in Sources */,
+				B1075E931CA94D8F00521CC2 /* AVPageContentViewController.swift in Sources */,
 				B1F69E351C46456F00C7C5FB /* ViewController.swift in Sources */,
 				B1F69E331C46456F00C7C5FB /* AppDelegate.swift in Sources */,
-				B1F69E641C4645FD00C7C5FB /* AVPageContentViewController.swift in Sources */,
-				B1F69E621C4645C900C7C5FB /* AVPageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -500,6 +500,7 @@
 				B1F69E591C46456F00C7C5FB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B1F69E5A1C46456F00C7C5FB /* Build configuration list for PBXNativeTarget "AVLighterPageViewControllerTests" */ = {
 			isa = XCConfigurationList;
@@ -508,6 +509,7 @@
 				B1F69E5C1C46456F00C7C5FB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B1F69E5D1C46456F00C7C5FB /* Build configuration list for PBXNativeTarget "AVLighterPageViewControllerUITests" */ = {
 			isa = XCConfigurationList;
@@ -516,6 +518,7 @@
 				B1F69E5F1C46456F00C7C5FB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
